@@ -15,6 +15,7 @@ import javafx.scene.image.WritableImage;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.stage.FileChooser;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javax.imageio.ImageIO;
 
@@ -60,7 +61,9 @@ public class CommonTools extends Control {
         }
 
         if (Settings.APPLICATION_ICON != null) {
-            tools.LoadIcon(PRIMARY_STAGE, Settings.APPLICATION_ICON);
+            if (!OSValidator.IS_UNIX()) {
+                tools.LoadIcon(PRIMARY_STAGE, Settings.APPLICATION_ICON);
+            }
         }
 
         root.InitializeStyleSheets(scene, Settings.STYLE_CLASSES);
@@ -104,5 +107,15 @@ public class CommonTools extends Control {
     
     public static void OPEN_DOCUMENT(String url) {
         MyApp.GET_INSTANCE().getHostServices().showDocument(url);
+    }
+    
+    public static double GET_DPI() {
+        double dpi = Screen.getPrimary().getDpi();
+        
+        if (dpi < 0) {
+            dpi = 96;
+        }
+        
+        return dpi;
     }
 }

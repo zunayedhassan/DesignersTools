@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package zunayedhassan.DesignersTools;
 
 import javafx.scene.Scene;
@@ -17,7 +12,7 @@ public class RadialGradientWindow extends Stage {
     public RadialGradientDetailsPane CurrentRadialGradientDetailsPane = new RadialGradientDetailsPane(this);
     
     public RadialGradientWindow() {
-        Scene scene = new Scene(this.CurrentRadialGradientDetailsPane, 1300, 400);
+        Scene scene = new Scene(this.CurrentRadialGradientDetailsPane, 1350, 450);
         this.initStyle(StageStyle.DECORATED);
         this.setScene(scene);
         this.setTitle("Radial Gradient Editor");

@@ -1,12 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package zunayedhassan.DesignersTools;
 
-import javafx.application.Application;
-import javafx.application.HostServices;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
@@ -16,7 +9,6 @@ import javafx.scene.control.Dialog;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -29,7 +21,10 @@ import javafx.stage.Stage;
 public class AboutDialog extends Dialog {
     public AboutDialog() {
         this.setTitle("About");
-        ((Stage) this.getDialogPane().getScene().getWindow()).getIcons().add(new Image(this.getClass().getResourceAsStream("icons/help-about.png")));
+        
+        if (!OSValidator.IS_UNIX()) {
+            ((Stage) this.getDialogPane().getScene().getWindow()).getIcons().add(new Image(this.getClass().getResourceAsStream("icons/help-about.png")));
+        }
         
         VBox content = new VBox(5);
         

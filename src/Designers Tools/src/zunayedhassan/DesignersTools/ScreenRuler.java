@@ -1,21 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package zunayedhassan.DesignersTools;
 
-import com.sun.javafx.scene.control.skin.CustomColorDialog;
 import java.util.Optional;
-import javafx.beans.property.DoubleProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
-import javafx.geometry.Point2D;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
@@ -28,17 +18,13 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 import javafx.stage.Screen;
-import javafx.stage.StageStyle;
 import javafx.scene.text.Text;
 import javafx.scene.control.ContextMenu;
 import javafx.scene.control.MenuItem;
-import javafx.geometry.Bounds;
 import javafx.geometry.Pos;
 import javafx.geometry.Side;
 import javafx.scene.Cursor;
 import javafx.scene.Node;
-import javafx.scene.control.Button;
-import javafx.scene.control.ColorPicker;
 import javafx.scene.control.CustomMenuItem;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioMenuItem;
@@ -58,7 +44,7 @@ public class ScreenRuler extends BorderPane {
     public static final int DEFAULT_RULER_WIDTH = 800; 
     public static final int DEFAULT_RULER_HEIGHT = 70;
     public static final int MEASUREMENT_LINE_HEIGHT = 21;
-    public static final double DPI = Screen.getPrimary().getDpi();
+    public static final double DPI = CommonTools.GET_DPI();
     public static final Color DEFAULT_RULER_COLOR = Color.web("#FFC266");
     
     public static enum UNIT {

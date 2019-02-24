@@ -1,15 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package zunayedhassan.DesignersTools;
 
-import javafx.beans.property.DoubleProperty;
 import javafx.scene.control.Control;
-import javafx.scene.control.Label;
 import javafx.scene.control.Spinner;
-import javafx.scene.layout.HBox;
 
 /**
  *
