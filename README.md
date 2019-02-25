@@ -22,8 +22,13 @@ Designers Tools is a collection of various tools to help designers to make desig
 
 ## Download
 ### Windows
-* Setup (*.msi): https://github.com/zunayedhassan/DesignersTools/raw/master/bin/windows/DesignersTools-1.0_x64-setup.zip
-* Portable: https://github.com/zunayedhassan/DesignersTools/raw/master/bin/windows/DesignersTools-1.0_x64-bin.zip
+* Setup: https://github.com/zunayedhassan/DesignersTools/raw/master/bin/DesignersTools-1.0.1-setup-win_x64.exe
+* Portable: https://github.com/zunayedhassan/DesignersTools/raw/master/bin/Designers%20Tools-1.0.1-bin-win_x64.zip
+### Linux
+* AppImage: https://github.com/zunayedhassan/DesignersTools/raw/master/bin/DesignersTools-1.0.1-bin_linux.AppImage
+* Portable: https://github.com/zunayedhassan/DesignersTools/raw/master/bin/DesignersTools-1.0.1-bin_linux.tar.xz
+### Mac:
+* Package Bundles: https://github.com/zunayedhassan/DesignersTools/blob/master/bin/DesignersTools-1.0.1-bin_mac.zip
 
 ## Screenshot
 
